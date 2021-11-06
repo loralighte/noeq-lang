@@ -1,0 +1,33 @@
+// Custom count function because fuck you.
+// Seriously, why do I have to do a custom count function by default???
+// WHY THE FUCK HAS NO ONE MADE A LANGUAGE WITH THIS YET!?!?
+// Like jfc JavaScript would be usable if it had this!
+// But it DOESN'T for fucks sake.
+// It would make so much more fucking sense than "i=0;i<1000;i++"!!
+// Or even
+// ```
+// count=0
+// while (count < 1000){
+//     # do shit
+//     count++
+// }
+// ```
+// like can we PLEASE add a count() thing to all languages already?
+// Thanks.
+// - Kai Lyons
+
+// count(<int>,<variable name for count>)
+set content ""
+for (count(1000,i)){
+    // Cases should always check all possible options. I'm sorry if you think an else within a case is stupid, 
+    // I could say the same about you!
+    case i{
+        // check_clean function checks if the number is whole. Can do equations in this fake language
+        check_clean(i%3):
+            set content content + "Fizz"
+        check_clean(i%5):
+            set content content + "Buzz"
+        else: 
+            set content i
+    }
+}

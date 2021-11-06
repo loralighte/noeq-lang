@@ -1,0 +1,49 @@
+// I can do fizzbuz and fibonacci all day. But, here is the real challange.
+// A user-input system for numbers, but only with Inequality operators:
+set get_input get(input, int) // would automatically check if it is an integer or not.
+
+// That's right. A double negative would have to function for this to work.
+// not not equals.
+array_of_numbers !!= [0,5,3,2,100,1234,2245,245,16547,543,318513]
+
+// Another rant. Why the fuck is there no "if any" operation for arrays!?
+// It wouldn't be fucking hard to make for a language, right? 
+// Just implement a for each in the language so people don't write long code.
+// Just look at this monstrocity:
+// ```
+// array_of_things=[...]
+// for (i=0;i<array_of_things.length();i++){
+//    if (array_of_things[i] == user input at some point){
+//        print("yay this fucking monstrocity works!")
+//    }
+// }
+// ```
+// Who in their right mind goes "yeah, let's do this. Let's waste time!"
+// And if you think this is bad, tell me, how about this?
+// ```
+// array_one=[...]
+// array_two=[...]
+// for (i=0;i<array_one.length();i++){
+//    for (x=0;x<array_two.length();x++){
+//       if (array_one[i],array_two[x]){
+//          print("Fuck you")
+//       }
+//    }
+// }
+// ```
+// Like, imagine how fucking far technology would be if it was:
+// ```
+// array_one=[...]
+// array_two=[...]
+// if (array_one[*] == array_two[*]){
+//    print("Look Ma! I can actually do this in a simple, EASY, BEGINNER FRIENDLY WAY!!")   
+// }
+// ```
+// If there is a better way, go ahead and tell me I am an idiot for doing this, but seriously.
+// So much more can be made with LESS FUCKING CODE IF WE JUST DECIDED ONE DAY TO SAY 
+// "Hey, programming languages should make sense!"
+// Python's syntax, while easy, is fucking horrible at times. Especially with classes and shit.
+// I digress, here is the rest of the code.
+if (array_of_numbers[*] !!= get_input){
+    print("yay")
+}

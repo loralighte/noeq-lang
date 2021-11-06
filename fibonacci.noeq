@@ -1,0 +1,14 @@
+// No equals operators here
+set a 0
+print(a)
+set b a + 1
+// I'm lazy, okay!?
+print(b)
+print(b)
+// Inequality operations are permitted by the challange
+while (a < 1000000){
+    set a b + a
+    set b a + b
+    print(a)
+    print(b)
+}
